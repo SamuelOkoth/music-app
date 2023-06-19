@@ -1,9 +1,9 @@
 import React from 'react'
-
-export default function index() {
+import "./sidebar.css"
+export default function Sidebar() {
   return (
-    <div>
-      
+    <div className='sidebar-container'>
+      Sidebar
     </div>
   )
 }
