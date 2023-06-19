@@ -1,4 +1,5 @@
-
+// import "./shared/globalStyles.css";
+import "../../shared/globalStyles.css"
 
 export default function Library() {
   return (

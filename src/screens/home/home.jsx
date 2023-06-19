@@ -1,16 +1,20 @@
-import React from 'react'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Player from './player'
-import Trending from './trending'
-import Feed from './feed'
-import Library from './library'
-import Favorites from './favorites'
+import Player from '../player/player'
+import Trending from '../trending/trending'
+import Feed from '../feed/feed'
+import Library from '../library/library'
+import Favorites from '../favorites/favorites'
 import "./home.css"
+import Sidebar from '../../components/sidebar'
 
 export default function Home() {
   return (
-    <Router className="main-body">
-        <div>
+    <Router >
+        <div className="main-body">
+         
+          <Sidebar/>
+          <Library />
         <Routes>
         <Route path="/library" element={<Library />} />
         <Route path="/feed" element={<Feed />} />

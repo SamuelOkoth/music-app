@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './screens/Home'
+import Home from './screens/home/home'
 
 export default function App() {
   return (
