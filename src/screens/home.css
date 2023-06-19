@@ -3,4 +3,5 @@
     width: 100vw;
     background-color: #E99072;
     border-radius: 30px;
+    display: flex;
 }

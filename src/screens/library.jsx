@@ -2,7 +2,7 @@
 
 export default function Library() {
   return (
-    <div>
+    <div className="screen-container">
       Library
     </div>
   )
