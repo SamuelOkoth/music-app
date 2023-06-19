@@ -1,9 +1,13 @@
 import "./sidebarButton.css";
+import { Link } from 'react-router-dom';
 
-export default function SidebarButton() {
+
+export default function SidebarButton(props) {
   return (
     <div>
-      sa
+      <Link to={props.to}>
+      
+      </Link>
     </div>
   )
 }
