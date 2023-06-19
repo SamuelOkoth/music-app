@@ -79,6 +79,7 @@ body {
 --webkit-font-smoothing: antialiased;
 --moz-scx-font-smoothing: grayscale;
 box-sizing: border-box;
+background-color: #1a1a1a;
 }
 
 code {
