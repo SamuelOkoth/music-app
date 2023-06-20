@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.screen-container{
+  width: 1175px;
+  height: 100%;
+  background-color: black;
+  border-radius: 30px;
+ 
+}

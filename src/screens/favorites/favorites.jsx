@@ -1,3 +1,4 @@
+import "../../shared/globalStyles.css"
 
 export default function Favorites() {
   return (

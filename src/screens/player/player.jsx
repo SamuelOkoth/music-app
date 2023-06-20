@@ -1,3 +1,5 @@
+import "../../shared/globalStyles.css"
+
 
 export default function Player() {
   return (
