@@ -1,8 +1,8 @@
 
 export default function Favorites() {
   return (
-    <div>
-      fav
+    <div className="screen-container">
+      favorites
     </div>
   )
 }
