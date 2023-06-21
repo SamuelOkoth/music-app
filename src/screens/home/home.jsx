@@ -7,13 +7,14 @@ import Library from '../library/library'
 import Favorites from '../favorites/favorites'
 import "./home.css"
 import Sidebar from '../../components/sidebar'
+import Login from '../auth/login'
 
 export default function Home() {
   return (
     <Router >
         <div className="main-body">
-         
-          <Sidebar/>
+         <Login/>
+          {/* <Sidebar/>
           <Library />
         <Routes>
         <Route path="/library" element={<Library />} />
@@ -21,7 +22,7 @@ export default function Home() {
         <Route path="/trending" element={<Trending />} />
         <Route path="/player" element={<Player />} />
         <Route path="/favorites" element={<Favorites />} />
-      </Routes>
+      </Routes> */}
         </div>
       
     </Router>
