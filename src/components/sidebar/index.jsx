@@ -16,7 +16,8 @@ export default function Sidebar() {
   );
 
   useEffect (() =>{
-    apiClient.get("me").then((response) => {console.log(response);});
+    apiClient.get("me").then((response) => {
+      setImage(response.data.images[0].url);});
     },[])
 
 
