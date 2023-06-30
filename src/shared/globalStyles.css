@@ -3,5 +3,12 @@
     height: 100%;
     background-color: black;
     border-radius: 30px;
-   
+    background-color: #1e2a3e;
+    opacity: 1;
+    background-position: repeating-gradient(
+        center at center left,
+        transparent 0,
+        #1e2a3e 40px
+    ),
+    repeating-linear-gradient(#23365655, #233656);
 }
