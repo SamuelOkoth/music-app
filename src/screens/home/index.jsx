@@ -10,7 +10,7 @@ import Sidebar from '../../components/sidebar'
 
 import { useState, useEffect } from 'react'
 
-import Signup from '../auth/signup'
+import Signup from '../auth/Sign'
 import Login from '../auth/login'
 
 
