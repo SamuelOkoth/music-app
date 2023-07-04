@@ -9,7 +9,7 @@ import { FaPlay } from 'react-icons/fa';
 import { useEffect } from "react"
 import apiClient from "../../spotify"
 import  {useState}  from "react"
-import Signup from "../../screens/auth/signup"
+
 
 // export default function Sidebar() {
 //   const [image, setImage] = useState(
