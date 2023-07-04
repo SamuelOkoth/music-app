@@ -16,7 +16,7 @@ export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=
   });
   export const setClientToken = (token) => {
     apiClient.interceptors.request.use(async function(config){
-      config.headers.Authorization = "Bearer " + token;
+      config.headers.Authorization = `Bearer ${token}`;
             return config;
     });
     };

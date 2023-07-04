@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "./widgets.css";
 import apiClient from "../../spotify";
 import WidgetCard from "./widgetCard";
