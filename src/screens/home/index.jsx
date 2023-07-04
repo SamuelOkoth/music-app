@@ -9,8 +9,8 @@ import "./home.css"
 import Sidebar from '../../components/sidebar'
 
 import { useState, useEffect } from 'react'
-import { setClientToken } from '../../spotify'
-import Signup from '../auth/signUp'
+
+import Signup from '../auth/signup'
 import Login from '../auth/login'
 
 
