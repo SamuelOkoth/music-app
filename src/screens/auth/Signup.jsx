@@ -3,6 +3,9 @@ import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup'
 import { Link, useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import { apiDomain } from '../../utils';
+
 export default  function Signup() {
 const navigate = useNavigate();
     const Schema = yup.object().shape({
@@ -19,9 +22,25 @@ const {
     resolver: yupResolver(Schema),
 });
 
-const SendDataToServer = (data) => {
-    console.log(data);
-    navigate('/Login')
+const SendDataToServer =  async (data) => {
+  
+    
+  
+    const response = await fetch (`${apiDomain}auth/register`,{
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        
+        "Content-Type": "application/json",
+      },
+    })
+     if(response.status === 200){
+      alert("account created successfully")
+      navigate('/Login')
+     } else {
+        alert("Error creating user account");
+       }
+      
 }
 
   return (

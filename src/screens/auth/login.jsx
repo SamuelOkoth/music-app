@@ -4,6 +4,7 @@ import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup'
 import { Link, useNavigate } from 'react-router-dom'
+import { apiDomain } from "../../utils";
 export default function Login() {
   const navigate = useNavigate();
   const Schema = yup.object().shape({
@@ -20,10 +21,27 @@ export default function Login() {
     resolver:yupResolver(Schema)
   });
 
-  const SendDataToServer = (data) => {
-    console.log(data)
-    navigate('/Player')
-  }
+  const SendDataToServer =  async (data) => {
+  
+    
+  
+    const response = await fetch (`${apiDomain}auth/login`,{
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        
+        "Content-Type": "application/json",
+      },
+    })
+     if(response.status === 200){
+      alert("loged in successfully")
+      navigate('/Player')
+     } else {
+        alert("Error authenticating");
+       }
+      
+}
+
 
   return (
     <div className="login-page">

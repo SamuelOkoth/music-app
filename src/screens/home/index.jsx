@@ -44,7 +44,8 @@ export default function Home() {
         <Route path="/Signup" element={< Signup/>} />
       <Route path="/Login" element={<Login/>} />
           <Route path="/player" element={<Player />} />
-          <Route path="/" element={<Library />} />
+          <Route path="/" element={<Signup />} />
+          <Route path="/library" element={<Library />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/favorites" element={<Favorites />} />

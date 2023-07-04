@@ -63,7 +63,7 @@ export default function Sidebar() {
         <SidebarButton title="Library" to="/" icon={<IoLibrary />} />
       </div>
       <SidebarButton title="Sign Out" to="" icon={<FaSignOutAlt />} />
-      <SidebarButton title="Signup" Link to="Signup"  />
+      
 
     </div>
   );
